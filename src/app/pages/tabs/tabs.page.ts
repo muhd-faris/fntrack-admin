@@ -4,6 +4,9 @@ import {
   IonTabBar,
   IonIcon,
   IonTabButton,
+  IonHeader,
+  IonToolbar,
+  IonContent,
 } from '@ionic/angular/standalone';
 
 import { TabItems } from './tab-item';
@@ -12,7 +15,15 @@ import { TabItems } from './tab-item';
   selector: 'app-tabs',
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
-  imports: [IonTabButton, IonIcon, IonTabBar, IonTabs],
+  imports: [
+    IonContent,
+    IonToolbar,
+    IonHeader,
+    IonTabButton,
+    IonIcon,
+    IonTabBar,
+    IonTabs,
+  ],
 })
 export class TabsPage {
   readonly tabs = viewChild.required(IonTabs);
