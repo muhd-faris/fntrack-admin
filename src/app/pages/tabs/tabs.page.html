@@ -1,0 +1,9 @@
+<ion-tabs (ionTabsDidChange)="onChange()">
+  <ion-tab-bar slot="bottom">
+    @for (t of tabItems; track $index) {
+    <ion-tab-button [tab]="t.path" layout="icon-top">
+      <ion-icon [src]="selectedTab() === t.path ? t.icon_selected : t.icon_default" />
+    </ion-tab-button>
+    }
+  </ion-tab-bar>
+</ion-tabs>
