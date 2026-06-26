@@ -69,3 +69,16 @@ ion-tab-button {
     background-color: var(--ion-color-primary);
   }
 }
+
+.avatar-image {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s ease, outline-offset 0.2s ease;
+  cursor: pointer;
+  overflow: hidden;
+  background: var(--ion-color-medium);
+  outline: 1px solid var(--ion-color-medium);
+}

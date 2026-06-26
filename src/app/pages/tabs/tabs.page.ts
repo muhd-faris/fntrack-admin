@@ -7,6 +7,7 @@ import {
   IonHeader,
   IonToolbar,
   IonContent,
+  IonImg,
 } from '@ionic/angular/standalone';
 
 import { TabItems } from './tab-item';
@@ -16,6 +17,7 @@ import { TabItems } from './tab-item';
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
   imports: [
+    IonImg,
     IonContent,
     IonToolbar,
     IonHeader,
