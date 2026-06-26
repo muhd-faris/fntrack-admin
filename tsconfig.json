@@ -7,6 +7,9 @@
     "esModuleInterop": true,
     "strict": true,
     "paths": {
+      "@components": [
+        "./src/app/components/index.ts"
+      ],
       "@app/*": [
         "./src/app/*"
       ],
