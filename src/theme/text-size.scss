@@ -1,0 +1,29 @@
+$text-sizes: (
+  xs: (font-size: 12px,
+    line-height: calc(1 / 0.75)),
+  sm: (font-size: 14px,
+    line-height: calc(1.25 / 0.875)),
+  base: (font-size: 16px,
+    line-height: calc(1.5 / 1)),
+  lg: (font-size: 18px,
+    line-height: calc(1.75 / 1.125)),
+  xl: (font-size: 20px,
+    line-height: calc(1.75 / 1.25)),
+  2xl: (font-size: 24px,
+    line-height: calc(2 / 1.5)),
+  3xl: (font-size: 30px,
+    line-height: 2.25rem)
+);
+
+@mixin text-size($size) {
+  $config: map-get($text-sizes, $size);
+
+  @if $config {
+    font-size: map-get($config, font-size);
+    line-height: map-get($config, line-height);
+  }
+
+  @else {
+    @warn "The text size '#{$size}' is not defined in the $text-sizes map.";
+  }
+}

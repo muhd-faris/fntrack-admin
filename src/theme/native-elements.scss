@@ -3,3 +3,21 @@ ion-card {
   margin: 0;
   border: 1px solid var(--ion-border-color);
 }
+
+ion-searchbar {
+  padding: 0;
+}
+
+ion-button {
+  margin: 0;
+  --box-shadow: none;
+  --border-radius: 10px;
+  border-radius: 10px;
+  --background: var(--ion-background-color);
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: var(--ion-border-color);
+  text-transform: none;
+  --color: var(--ion-text-color);
+  --ripple-color: transparent;
+}

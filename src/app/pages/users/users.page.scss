@@ -1,0 +1,69 @@
+@import "theme/text-size.scss";
+
+.user-card {
+  padding: 10px;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--ion-border-color);
+
+    ion-avatar {
+      width: 40px;
+      height: 40px;
+    }
+
+    .text-container {
+      h2 {
+        font-weight: 600;
+        @include text-size(base);
+        line-height: 1.25;
+        color: var(--ion-text-color);
+        margin: 0;
+      }
+
+      p {
+        @include text-size(sm);
+        margin: 0;
+        color: var(--ion-color-medium);
+      }
+    }
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .item-details {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: var(--ion-text-color);
+      @include text-size(sm);
+      margin: 0;
+
+      ion-icon {
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 8px;
+        margin-right: 10px;
+        background: rgba(var(--ion-color-primary-rgb), 0.3);
+        color: var(--ion-color-primary);
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 10px;
+
+      ion-button {
+        width: 50%;
+      }
+    }
+  }
+}

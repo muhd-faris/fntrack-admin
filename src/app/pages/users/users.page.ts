@@ -1,31 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import {
   IonContent,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
+  IonRow,
+  IonCol,
+  IonCard,
+  IonAvatar,
+  IonIcon,
+  IonButton,
+  IonSearchbar,
 } from '@ionic/angular/standalone';
-import { CustomMainHeaderComponent } from '@components';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.page.html',
   styleUrls: ['./users.page.scss'],
-  standalone: true,
   imports: [
+    IonSearchbar,
+    IonButton,
+    IonIcon,
+    IonAvatar,
+    IonCol,
+    IonRow,
     IonContent,
-    IonHeader,
-    IonTitle,
-    IonToolbar,
-    CommonModule,
-    FormsModule,
-    CustomMainHeaderComponent,
+    IonCard,
   ],
 })
 export class UsersPage implements OnInit {
-  constructor() {}
-
   ngOnInit() {}
 }
